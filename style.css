@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Goudy Bookletter 1911", sans-serif; 
+}
+.logo{
+    float: left;
+}
+.smenu{
+    background-color:rgb(180, 172, 185);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+
+} 
+.menu:hover{
+    color: rgb(56, 112, 44);
+}
+ul{
+    padding-top: 25PX;
+    margin-left: 50%; 
+}
+li{
+    list-style: none;
+    height: 100%;
+    display: inline;
+    font-size: 28px;
+    margin: 0 30px; 
+}
+a{
+    text-decoration: none;
+    color: rgb(115, 52, 134);
+}
+.que{
+    margin: 5% 12%;
+}
+.Ini1{
+    float: right;
+    border-radius: 25px;
+    width: 300px;
+    height: 250px;
+    margin: 15px 0 20px 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(56, 112, 44);
+}
+p{
+    text-align: justify;
+    font-size: 23px;
+    line-height: 50px;
+}
+.Ini2{
+    float: left;
+    border-radius: 25px;
+    width: 300px;
+    height: 250px;
+    margin: 30px 30px 0 25px;
+}
+.mapas{
+    margin-left: 2%; 
+    border-radius: 5px;
+}
+.Ant,.Bosa1,.Bosa2,.Cent,.Chap,.CB1,.CB2,.Eng,.Font,.Ken,.Mart,.Pte,.Raf,.SC1,.SC2,.Suba,.Teus,.Tunj,.Usaq,.Usme{
+    border-radius: 15px;
+    margin: 5px;
+}
+.login{
+    border-color: black;
+    box-shadow: 10px 20px 30px 10px rgb(124, 124, 124);
+}
+.perfil{
+    width: 250px;
+    height: 250px;
+    font-size: 35px;
+    margin: 20px;
+    color:rgb(115, 52, 134);
+    background-color: rgb(200, 164, 235);
+    box-shadow: 10px 20px 30px 10px rgb(124, 124, 124);
+}
+.perfil:hover, .iniciar:hover{
+    background-color: rgb(188, 142, 235);
+    color: rgb(56, 112, 44);
+}
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 15px;
+    font-size: 28px;
+    color: rgb(115, 52, 134);
+}
+label, input, select{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.iniciar{
+    width: 100px;
+    color:rgb(115, 52, 134);
+    background-color: rgb(200, 164, 235);
+    font-size: 25px;
+}
+footer{
+    padding-top: 20px;
+    background-color: rgb(196, 180, 204);
+}
+h2{
+    font-size: 28px;
+}

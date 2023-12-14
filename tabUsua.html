@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <nav class="smenu">
+            <img class="logo" src="Img/logo_sf.png" width="250px">
+                <ul>
+                    <li>
+                    <a href="index.html" class="menu">Inicio</a>
+                    </li>
+                </ul>
+    </nav>
+    </header>
+        align-items: center;
+    }
+
+    input {
+        flex-grow: 1;
+        margin-right: 8px;
+    }
+
+    button {
+        background-color: rosybrown;
+        color: white;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h2>Beneficiario</h2> 
+
+<table id="miTabla1">
+    <thead>
+        <tr>
+           
+            <th>Id Beneficiario</th>
+            <th>Tipo Documento</th>
+            <th>Numero de Documento</th>
+            <th> Nombres</th>
+            <th> Apellidos</th>
+            <th>Telefono</th>
+            <th>E_mail</th>
+            <th>Ciudad</th>
+            <th>Direccion</th>
+            <th>Ocupacion</th>
+        </tr>
+       
+    </thead>
+    <tbody id="tabla2">
+
+    </tbody>
+</table>
+
+<script>
+    function agregarFila() {
+      
+        var tabla = document.getElementById("Tabla1");
+        var tabla = document.getElementById("tabla2");
+
+
+        var fila = tabla.insertRow();
+        var celdaIdBeneficiario = fila.insertCell(0);
+        var celdaTipoDocumento= fila.insertCell(1);
+        var celdaNDocumento= fila.insertCell(2);
+        var celdaNombres= fila.insertCell(3);
+        var celdaApellidos= fila.insertCell(4);
+        var celdaTelefono= fila.insertCell(5);
+        var celdaE_mail= fila.insertCell(6);
+        var celdaCiudad= fila.insertCell(7);
+        var celdaDireccion= fila.insertCell(8);
+        var celdaOcupacion= fila.insertCell(9);
+        
+       
+      
+       
+
+        var formulario = document.createElement("form");
+        formulario.onsubmit = function(event) {
+            event.preventDefault(); 
+        };
+
+   
+            celdaIdBeneficiario.textContent = inputCodB.value;
+            celdaTipoDocumento.textContent = inputNombre.value;
+            celdaNDocumento.textContent = inputApellido.value;
+            celdaNombres.textContent = inputNDocumento.value;
+            celdaApellidos.textContent = inputDireccion.value;
+            celdaTelefono.textContent = inputTelefono.value;
+            celdaE_mail.textContent = inputE_mail.value;
+            celdaCiudad.textContent = inputOcupacion.value;
+            celdaDireccion.textContent = inputLocalidad.value;
+            celdaOcupacion.textContent = inputServicios.value;
+            inputIdBeneficiario.value = ""; 
+            inputTipoDocumento.value = "";
+            inputNDocumento.value = "";
+            inputNombres.value = "";
+            inputApellidos.value = "";
+            inputTelefono.value = "";
+            inputE_mail.value = "";
+            celdaCiudad.value = "";
+            celdaDireccion.value = "";
+            celdaOcupacion.value = "";
+            
+    
+
+       
+        formulario.appendChild(inputIdBeneficiario);
+        formulario.appendChild(inputTipoDocumento);
+        formulario.appendChild(inputNDocumento);
+        formulario.appendChild(inputNombres);
+        formulario.appendChild(inputApellidos);
+        formulario.appendChild(inputTelefono);
+        formulario.appendChild(inputE_mail);
+        formulario.appendChild(inputCiudad);
+        formulario.appendChild(inputDireccion);
+        formulario.appendChild(inputOcupacion);
+
+    }
+</script>
+
+<button onclick="agregarFila()">Agregar Fila</button>
+
+<footer>
+    <center>
+    <img src="Img/logo_sf.png"><br>
+    <h2>
+        <a href="http://www,facebook.com" style="color: rgb(90, 47, 119)"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="http://www.twitter.com" style="color: rgb(90, 47, 119)"><i class='bx bxl-twitter' ></i></a>
+        <a href="http://www.Instagram.com" style="color: rgb(90, 47, 119)"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="http://www.tiktok.com" style="color: rgb(90, 47, 119)"><i class='bx bxl-tiktok' ></i></a>
+    </h2>
+</center>
+</footer> 
+</body>
+</html>
+</body>
+</html>
