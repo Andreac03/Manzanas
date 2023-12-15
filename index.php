@@ -17,7 +17,7 @@ include 'conexion.php';
                 <img class="logo" src="Img/logo_sf.png" width="250px">
                     <ul>
                         <li>
-                        <a href="index.html" class="menu">Inicio</a>
+                        <a href="index.php" class="menu">Inicio</a>
                         </li>
                         <li>
                         <a href="Iniciar_Sesión.html" class="menu">Login</a>
