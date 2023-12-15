@@ -1,6 +1,6 @@
 <?php
 
-$conexion = new mysqli('localhost', 'root', '', 'manzanas');
+$conexion = new mysqli('localhost', 'root', '', 'manzanas2');
 
 // Verifica si hay errores en la conexión
 if ($conexion->connect_error) {
@@ -8,20 +8,31 @@ if ($conexion->connect_error) {
 }
 
 echo "<br>";
-
+$Id=1;
 $nombre_usuario =$_POST['nombre'];
 $apellido_usuario =$_POST['apellido'];
-$edad_usuario =$_POST['edad'];
-$email_usuario =$_POST['email'];
-$password_usuario =$_POST['password'];
-$servicio_usuario =$_POST['servicio'];
-$localidad_usuario =$_POST['localidad'];
-$comentarios_usuario =$_POST['comentarios'];
+$tipo_documento=$_POST['documento'];
+$documento=$_POST['Nodocumento'];
+$telefono=$_POST['telefono'];
+$email=$_POST['email'];
+$ciudad=$_POST['ciudad'];
+$direccion=$_POST['direccion'];
+$ocupacion=$_POST['ocupacion'];
+
+
 
 
 //Setencia SQL
 
-$query = "INSERT INTO registro (nombres,apellidos,edad,email,contraseña,servicio,localidad,comentarios)VALUES ('$nombre_usuario','$apellido_usuario','$edad_usuario','$email_usuario','$password_usuario','$servicio_usuario','$localidad_usuario','$comentarios_usuario')";
+$query = "INSERT INTO Beneficiarios (  Id_Beneficiario,Tipo_Documento,
+        Numero_Documento,
+        Nombres,
+        Apellidos,
+        Telefono,
+        E_meil,
+        Ciudad,
+        Direccion,
+        Ocupacion)VALUES ('$Id','$tipo_documento','$documento','$nombre_usuario','$apellido_usuario','$telefono','$email','$ciudad','$direccion','$ocupacion')";
 
 //Ejecución setencia SQL
 $resultado = $conexion->query($query);
