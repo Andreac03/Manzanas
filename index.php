@@ -1,4 +1,7 @@
-
+<?php
+include 'config.php';
+include 'conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +17,7 @@
                 <img class="logo" src="Img/logo_sf.png" width="250px">
                     <ul>
                         <li>
-                        <a href="index.php" class="menu">Inicio</a>
-                        </li>
-                        <li>
-                        <a href="Iniciar_Sesión.html" class="menu">Login</a>
+                        <a href="Iniciar_Sesión.php" class="menu">Login</a>
                         </li>
                     </ul>
         </nav>

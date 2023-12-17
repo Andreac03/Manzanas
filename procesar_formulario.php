@@ -8,7 +8,6 @@ if ($conexion->connect_error) {
 }
 
 echo "<br>";
-$Id=1;
 $nombre_usuario =$_POST['nombre'];
 $apellido_usuario =$_POST['apellido'];
 $tipo_documento=$_POST['documento'];
@@ -24,7 +23,7 @@ $ocupacion=$_POST['ocupacion'];
 
 //Setencia SQL
 
-$query = "INSERT INTO Beneficiarios (  Id_Beneficiario,Tipo_Documento,
+$query = "INSERT INTO Beneficiarios (Tipo_Documento,
         Numero_Documento,
         Nombres,
         Apellidos,
@@ -32,7 +31,7 @@ $query = "INSERT INTO Beneficiarios (  Id_Beneficiario,Tipo_Documento,
         E_meil,
         Ciudad,
         Direccion,
-        Ocupacion)VALUES ('$Id','$tipo_documento','$documento','$nombre_usuario','$apellido_usuario','$telefono','$email','$ciudad','$direccion','$ocupacion')";
+        Ocupacion)VALUES ('$tipo_documento','$documento','$nombre_usuario','$apellido_usuario','$telefono','$email','$ciudad','$direccion','$ocupacion')";
 
 //Ejecución setencia SQL
 $resultado = $conexion->query($query);
